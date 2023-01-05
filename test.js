@@ -1,6 +1,16 @@
 import Dog from '/Dog.js';
 import dogs from '/data.js';
 
+console.log(dogs[0])
+
+let dogArray = getDogArray(dogs)
+console.log(dogArray[0])
+
+function getDogArray(dogs) {
+  return dogs.map(dog => dog);
+} 
+
+
 let dog = getNewDog();
 
 // event listener
@@ -20,31 +30,23 @@ function handleSwipe(e) {
     dog.hasBeenSwiped = true;
     dog.hasBeenLiked = true;
   }
-
-  if (dogs.length > 0) {
-    dog = getNewDog();
-    render();
-  } else {
-    document.getElementById('dog').innerHTML = `
-      <div style="height: 79vh; display: flex; align-items: center; justify-content: center">
-      <p class="no-dogs">No more doggies in your area.</p>
-    `
-  }
-
-
+  
+  dog = getNewDog();
+  console.log(dogs);
+  render();
 }
 
 // function to get the next dog from the array
 
 function getNewDog() {
-  const nextDog = dogs.shift();
+  const nextDog = dogArray.shift();
   return nextDog ? new Dog(nextDog) : {}
 }
 
 // function to render next dog in array
 
 function render() {
-    document.getElementById('dog').innerHTML = dog.getProfileHtml();
+  document.getElementById('dog').innerHTML = dog.getProfileHtml();
 }
 
 render();
