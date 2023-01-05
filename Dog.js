@@ -5,7 +5,6 @@ class Dog {
 
   getProfileHtml() {
     const {avatar, name, age, bio} = this;
-    console.log(this)
 
     return `
       <img id="dog-img" src="${avatar}">

@@ -1,12 +1,19 @@
 import Dog from '/Dog.js';
 import dogs from '/data.js';
 
-function render() {
-  document.getElementById('dog').innerHTML = newDog.getProfileHtml();
+// function to get the next dog from the array
+
+function getNewDog() {
+  const nextDog = dogs.shift();
+  return nextDog ? new Dog(nextDog) : {}
 }
 
-const newDog = new Dog(dogs[0]);
+const nextDog = getNewDog();
 
-console.log(newDog)
+// function to render next dog in array
+
+function render() {
+  document.getElementById('dog').innerHTML = nextDog.getProfileHtml();
+}
 
 render();
