@@ -5,9 +5,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tindog</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+  <header>
+    <img src="img/icon-profile.png">
+    <img src="img/logo.png">
+    <img src="img/icon-chat.png">
+  </header>
+
+  <main>
+    <div id="dog">
+      <h2 id="dog-name"></h2>
+      <p id="dog-info"></p>
+    </div>
+    
+    <div class="actions">
+      <button class="nope-btn"><span class="nope-icon"></span></button>
+      <button class="like-btn"><span class="like-icon"></span></button>
+    </div>
+  </main>
   
   <script src="index.js" type="module"></script>
 </body>
