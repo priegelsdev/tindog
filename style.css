@@ -73,3 +73,12 @@ header img {
   background-image: url('/img/icon-heart.png');
   margin-left: 1.3em;
 }
+
+.badge {
+  position: absolute; 
+  width: 50%;
+  top: 50px;
+  left: 12px;
+  height: auto;
+  transform: rotate(-30deg);
+}
