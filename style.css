@@ -3,3 +3,65 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  margin: 0 auto;
+  padding: 0 0.625em;
+  width: 470px;
+  background-color: #F7F8FB;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+}
+
+header img {
+  width: auto;
+  max-width: 15%;
+  height: auto;
+  max-height: 30px;
+}
+
+#dog {
+/*   width: 50vw;
+  height: 50vh; */
+  position: relative;
+  text-align: center;
+}
+
+#dog-img {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#dog-name, #dog-info {
+  position: absolute;
+  bottom: 1.2em;
+  left: 16px;
+  color: white;
+}
+
+#dog-name {
+  margin-bottom: 1.2em;
+}
+
+.actions {
+  text-align: center;
+}
+
+.nope-btn, .like-btn {
+  margin-top: 0.8em;
+  padding: 2.3em;
+  border-radius: 50%;
+  border: none;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 12px -7px #000000; 
+  box-shadow: 0px 4px 12px -7px #000000;
+}
+
+.like-btn {
+  margin-left: 1.3em;
+}
