@@ -53,15 +53,21 @@ header img {
 }
 
 .nope-btn, .like-btn {
+  height: 80px;
+  width: 80px;
   margin-top: 0.8em;
-  padding: 2.3em;
   border-radius: 50%;
   border: none;
   background-color: #FFFFFF;
-  -webkit-box-shadow: 0px 4px 12px -7px #000000; 
-  box-shadow: 0px 4px 12px -7px #000000;
+  -webkit-box-shadow: 0px 2px 9px -7px #000000; 
+  box-shadow: 0px 2px 9px -7px #000000;
 }
 
 .like-btn {
   margin-left: 1.3em;
+}
+
+.nope-icon, .like-icon {
+  display: block;
+  margin: 0 auto;
 }
