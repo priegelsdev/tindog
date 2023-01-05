@@ -1,5 +1,6 @@
 import Dog from '/Dog.js';
 import dogs from '/data.js';
+import {handleLike, handleNope} from '/utils.js'
 
 let dog = getNewDog();
 let dogImg = document.getElementById('dog').getElementsByTagName('img')
@@ -30,23 +31,10 @@ function handleSwipe(e) {
       setTimeout(() => render(), 1500);
   } else {
       setTimeout(() => document.getElementById('dog').innerHTML = `
-        <div style="height: 79vh; display: flex; align-items: center; justify-content: center">
+        <div style="height: 66vh; display: flex; align-items: center; justify-content: center">
         <p class="no-dogs">No more doggies in your area.</p>
       `, 1500);
   }
-}
-
-// function to handle like 
-
-function handleLike() {
-  document.getElementById('dog').innerHTML += `<img class='badge' src='/img/badge-like.png'>`
-}
-
-// function to handle nope
-
-function handleNope() {
-  document.getElementById('dog').innerHTML += `<img class='badge' src='/img/badge-nope.png'>`
-
 }
 
 // function to get the next dog from the array

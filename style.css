@@ -74,6 +74,14 @@ header img {
   margin-left: 1.3em;
 }
 
+.nope-btn:hover {
+  background-color: #FFE7EF;
+}
+
+.like-btn:hover {
+  background-color: #DBFFF4;
+}
+
 .badge {
   position: absolute; 
   width: 50%;
